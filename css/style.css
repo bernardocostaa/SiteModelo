@@ -56,7 +56,7 @@ a{
 
 .efeito-bg{
     position: absolute;
-    background: url('/img/efeitoBranco.png') no-repeat;
+    background: url('../img/efeitoBranco.png') no-repeat;
     background-size: cover;
     width: 100%;
     background-position: bottom center;
@@ -330,16 +330,6 @@ footer{
     max-width: 280px;
 }
 
-/* .list-footer p::before{
-    content: '';
-    height: 3px;
-    width: 2rem;
-    left: 30px;
-    position: relative;
-    top: -5px;
-    display: block;
-    background: white;;
-} */
 .list-footer p{
     padding-bottom: 12px;
     text-decoration-line: underline;
