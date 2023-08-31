@@ -322,6 +322,7 @@ footer{
     padding-bottom: 60px;
     gap: 10px;
     grid-template-columns: repeat(4,1fr);
+    justify-items: center;
 }
 
 .empresa p{
@@ -371,7 +372,7 @@ footer{
         flex-direction: column;
         gap: 25px;
     }
-    .list-footer:first-child{
+    .list-footer.ajuste{
         align-self: center;
     }
     .cont-title-head img{
