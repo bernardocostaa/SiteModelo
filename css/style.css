@@ -1,0 +1,459 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.mb-2{
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-color{
+    background: radial-gradient(at top left, #000033 0%, #101049 100%);
+    height: 875px;
+    position: relative;
+}
+.efeito{
+    background: url(../img/efeitos.png) no-repeat center;
+    position: absolute;
+    bottom: 0;
+    background-size: cover;
+    opacity: 0.7;
+    width: 80%;
+    height: 80%;
+}
+.efeito-footer{
+    background: url(../img/efeitos.png) no-repeat center;
+    position: absolute;
+    bottom: 0;
+    background-size: cover;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+}
+
+.efeito-bg{
+    position: absolute;
+    background: url('/img/efeitoBranco.png') no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: bottom center;
+    height: 100%;
+    left: 0;
+    top: 1px;
+    bottom: 0;
+}
+
+.menuCont{
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+.linksLogo{
+    display: flex;
+}
+.logo1{
+    height: 50px;
+}
+.listMenu{
+    display: flex;
+}
+
+.listMenu li a{
+    padding: 10px 12px;
+    color: white;
+}
+
+
+.cont-title-head{
+    display: flex;
+    padding-top: 140px;
+}
+
+.title-div{
+    color: white;
+    animation: animaLeft 1.5s forwards;
+}
+.div-img-head{
+    animation: animaRigth 1.5s forwards;
+}
+
+.title-div h1{
+    font-size: 3.75rem;
+    line-height: 1.1em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.title-div p{
+    margin-bottom: 60px;
+}
+
+.btn-wpp{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-weight: 600;
+    background: #25d366;
+    padding: 10px 60px;
+    border-radius: 8px;
+    width: max-content;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.btn-wpp:hover{
+    background: #37ec7a;
+}
+
+.z-index-1000{
+    position: relative;
+    z-index: 1000;
+}
+
+.lista-vantagem{
+    padding: 1rem 0;
+}
+
+.lista-vantagem li{
+    display: flex;
+    align-items: center;
+}
+
+.quemSomos h2{
+    font-size: 2.625rem;
+    padding: 1rem 0;
+}
+
+.avaliacao-google{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 25px;
+    padding: 30px;
+    background: #eaeaea;
+    margin-bottom: 30px;
+}
+
+.number-ava{
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.avaliacao-google{
+    display: flex;
+    gap: 15px;
+}
+.avaliacao-google ul{
+    display: flex;
+}
+.quemSomos{
+    max-width: 520px;
+}
+.flex-quemSomos{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+.nota{
+    text-align: center;
+    position: relative;
+    padding-left: 45px;
+}
+.nota::before{
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 100%;
+    left: 15px;
+    background: #FF9222;
+}
+
+.telefone img{
+    max-width: 300px;
+}
+
+.bg-dark{
+    background: linear-gradient(#000, #444);
+    padding: 50px 0;
+}
+
+.textServ{
+    text-align: center;
+    color: white;
+}
+
+.textServ h2{
+    font-size: 2.625rem;
+    font-weight: 600;
+    padding-bottom:16px;
+}
+
+.card{
+    background: #fff;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+}
+
+.servicos-card{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 50px 20px;
+    height: 100%;
+}
+
+.grid-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 40px 16px;
+}
+
+.title-card{
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    transition: .3s all;
+}
+
+.list-card{
+    padding: 16px 0;
+    flex: 1;
+}
+.list-card li {
+    padding: 6px 0;
+}
+
+.list-card li a {
+    color: #000;
+    transition: .3s all;
+}
+
+.list-card li a:hover{
+    color: #0000FF;
+}
+
+.atendimento{
+    color: white;
+    background: linear-gradient(#000, #444);
+    padding: 40px 50px;
+    max-width: 1150px;
+    margin: 50px auto;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.atendimento h2{
+    padding: 12px 0;
+    font-size: 2.625rem;
+    font-weight: 600;
+}
+
+.meio-bnt{
+    margin-inline:auto;
+    margin-top: 16px;
+}
+
+footer{
+    position: relative;
+    margin-top: 140px;
+    color: white;
+    background: radial-gradient(at top left, #000000 0%, #444444 100%);
+}
+
+.div-svg{
+    transform: rotate(180deg);
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    top: -1px;
+}
+
+.div-svg svg{
+    display: block;
+    width: calc(100% + 1.3px);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    z-index: -1;
+    height: 60px;
+}
+
+.logoFooter{
+    max-width: 280px;
+}
+
+.flex-footer{
+    display: grid;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.empresa p{
+    padding-top: 12px;
+    max-width: 280px;
+}
+
+/* .list-footer p::before{
+    content: '';
+    height: 3px;
+    width: 2rem;
+    left: 30px;
+    position: relative;
+    top: -5px;
+    display: block;
+    background: white;;
+} */
+.list-footer p{
+    padding-bottom: 12px;
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
+}
+.list-footer li {
+    padding: 8px 0;
+}
+
+.list-footer li a, .list-footer li {
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+.list-footer li a img, .list-footer li  img {
+    position: relative;
+    left: -10px;
+}
+
+.lojaInfo{
+    padding-left: 6px;
+}
+
+
+@media(max-width: 1025px){
+    .cont-title-head{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .list-footer:first-child{
+        align-self: center;
+    }
+    .cont-title-head img{
+        margin:  0 auto;
+    }
+    .title-div{
+        text-align: center;
+    }
+    .title-div .btn-wpp{
+        margin-inline: auto;
+    }
+    .grid-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .flex-footer{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:769px){
+    .flex-footer{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .grid-cards{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+    .flex-quemSomos{
+        flex-direction: column;
+    }
+    .telefone img{
+        max-width: 180px;
+        margin: 0 auto;
+    }
+    .btn-wpp{
+        padding: 10px 30px;
+    }
+    .quemSomos .btn-wpp{
+        margin:  0 auto;
+    }
+    .title-div h1{
+        font-size: 2.5rem;
+    }
+    .quemSomos h2{
+        font-size: 2rem;
+    }
+    .atendimento h2{
+        font-size: 2rem;
+    }
+    .atendimento{
+        padding: 30px 15px;
+        margin: 20px auto;
+    }
+    .cont-title-head{
+        padding-top: 80px;
+    }
+    .menuCont{
+        flex-direction: column;
+    }
+}
+
+@keyframes animaLeft{
+  from{
+    opacity: 0;
+    transform: translate3d(-150px, 0, 0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0px, 0, 0);
+  }
+}
+
+@keyframes animaRigth{
+    from{
+      opacity: 0;
+      transform: translate3d(150px, 0, 0);
+    }
+    to{
+      opacity: 1;
+      transform: translate3d(0px, 0, 0);
+    }
+  }
