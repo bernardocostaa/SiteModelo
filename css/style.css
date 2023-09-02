@@ -433,6 +433,7 @@ footer {
 
 .dropdown li a {
   color: black;
+  font-weight: 400;
 }
 
 .link-prin {
@@ -442,6 +443,8 @@ footer {
 
 .li-drop {
   padding: 4px 0;
+  color: #000;
+  font-weight: bold;
 }
 
 .li-drop ul {
@@ -625,6 +628,9 @@ footer {
   position: relative;
   background: none;
   left: 0;
+}
+.li-drop,.dropdown li a{
+  color: white;
 }
 }
 
