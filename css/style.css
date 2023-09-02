@@ -88,9 +88,14 @@ a {
   position: relative;
   gap: 1rem;
 }
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .menu-list li a {
-  padding: 10px 20px;
+  padding: 4px 20px;
   color: white;
   transition: 0.3s all;
   border-bottom: 2px solid transparent;
@@ -133,7 +138,7 @@ a {
   animation: animaLeft 1.5s forwards;
 }
 .div-img-head {
-  animation: animaRigth 1.5s forwards;
+  animation: animaCima 1.5s forwards;
 }
 
 .title-div h1 {
@@ -394,7 +399,7 @@ footer {
 
 .menu-drop {
   position: absolute;
-  top: 18px;
+  top: 12px;
   right: 0;
 }
 
@@ -448,12 +453,6 @@ footer {
   width: max-content;
 }
 
-.li-drop:hover .link-prin {
-  text-decoration-line: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
-}
-
 .link-dentro li {
   padding: 3px 0;
 }
@@ -464,6 +463,13 @@ footer {
 }
 
 #btn-mobile {
+  display: none;
+}
+
+.logo-links{
+  display: flex;
+}
+.logo-links-mobile{
   display: none;
 }
 
@@ -496,12 +502,85 @@ footer {
 }
 
 @media (max-width: 999px) {
+  .menu-bar {
+    border: none;
+  }
+  .logo-links{
+    display: none;
+  }
+  .logo-links-mobile{
+    display: flex;
+  }
+
   #btn-mobile {
     display: flex;
+    align-items: center;
     font-size: 1rem;
+    position: fixed;
+    left: -15px;
+    z-index: 100;
+    width: 100%;
     border: none;
     background: none;
     cursor: pointer;
+    justify-content: flex-end;
+  }
+
+   #btn-mobile.ativo #hamburger::before {
+    transform: rotate(-135deg);
+  }
+
+   #btn-mobile.ativo #hamburger::after {
+    transform: rotate(135deg);
+    top: -7px;
+  }
+
+  #btn-mobile.ativo #hamburger {
+    border-top-color: transparent;
+}
+
+  #nav {
+    display: flex;
+    flex-direction: column;
+    width: 0px;
+    overflow: hidden;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    transform: translate3d(100%, 0px, 0px);
+    height: 100vh;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    transition: all 200ms ease 0s;
+    z-index: 2;
+  }
+
+  #nav.ativo {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    height: 100vh;
+    background-color: #3274b6;
+    transition: all 200ms ease 0s;
+    z-index: 2;
+    padding: 32px 20px 20px;
+    width: 350px;
+    box-shadow: rgba(1, 7, 31, 0.41) -4px 4px 16px;
+    transform: translate3d(0px, 0px, 0px);
+    align-items: initial;
+    border: none;
+    justify-content: initial;
+  }
+
+  .logo-links-mobile {
+    padding: 20px 0;
+  }
+
+  .menu-list {
+    flex-direction: column;
   }
 
   #hamburger {
@@ -570,21 +649,21 @@ footer {
 @keyframes animaLeft {
   from {
     opacity: 0;
-    transform: translate3d(-150px, 0, 0);
+    transform: translate3d(-400px,0,0);
   }
   to {
     opacity: 1;
-    transform: translate3d(0px, 0, 0);
+    transform: translateZ(0);
   }
 }
 
-@keyframes animaRigth {
+@keyframes animaCima {
   from {
     opacity: 0;
-    transform: translate3d(150px, 0, 0);
+    transform: translate3d(0,-200px,0);
   }
   to {
     opacity: 1;
-    transform: translate3d(0px, 0, 0);
+    transform: translateZ(0);
   }
 }
