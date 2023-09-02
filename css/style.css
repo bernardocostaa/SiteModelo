@@ -104,6 +104,12 @@ a {
   align-items: center;
   position: relative;
 }
+.servi{
+  padding: 4px 20px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s all;
+}
 .menu-list li a::after {
   content: "";
   position: absolute;
@@ -400,7 +406,6 @@ footer {
 .menu-drop {
   position: absolute;
   top: 12px;
-  right: 0;
 }
 
 .menu-drop img {
@@ -477,6 +482,7 @@ footer {
   .cont-title-head {
     flex-direction: column;
     gap: 25px;
+    padding-top: 80px;
   }
   .list-footer.ajuste {
     align-self: center;
@@ -511,19 +517,26 @@ footer {
   .logo-links-mobile{
     display: flex;
   }
+.servi{
+  position: relative;
+}
 
-  #btn-mobile {
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
+#btn-mobile {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  justify-content: flex-end;
+}
+
+  #btn-mobile.ativo{
     position: fixed;
     left: -15px;
-    z-index: 100;
-    width: 100%;
-    border: none;
-    background: none;
-    cursor: pointer;
-    justify-content: flex-end;
   }
 
    #btn-mobile.ativo #hamburger::before {
@@ -639,7 +652,7 @@ footer {
     margin: 20px auto;
   }
   .cont-title-head {
-    padding-top: 80px;
+    padding-top: 60px;
   }
   .menu-bar {
     flex-direction: column;
