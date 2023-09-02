@@ -436,6 +436,7 @@ footer {
   left: 0;
   transform: translateY(20px);
   transition: 0.3s all;
+  display: none;
 }
 
 .dropdown.ativo {
@@ -618,13 +619,12 @@ footer {
     transition: all 200ms ease 0s;
     z-index: 2;
     padding: 32px 20px 20px;
-    width: 350px;
+    width: 400px;
     box-shadow: rgba(1, 7, 31, 0.41) -4px 4px 16px;
     transform: translate3d(0px, 0px, 0px);
     align-items: initial;
     border: none;
     justify-content: initial;
-    overflow-y: auto;
     gap: 50px;
   }
 
@@ -634,6 +634,8 @@ footer {
 
   .menu-list {
     flex-direction: column;
+    overflow-y: auto;
+    height: 270px;
     /* flex: auto; */
   }
 
@@ -658,6 +660,7 @@ footer {
     opacity: 1;
     transform: none;
     position: relative;
+    display: block;
     background: none;
   }
   .li-drop.ativo ul {
