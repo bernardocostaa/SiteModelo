@@ -13,22 +13,102 @@
     <title>Assistência técnica Apple Rio Preto</title>
   </head>
   <body>
-    <header class="bg-color">
-      <div class="efeito"></div>
+    <header class="bg-gradient">
+      <div class="background-effect"></div>
       <div class="container z-index-1000">
-        <div class="menuCont">
-          <a class="linksLogo" href="">
-            <img class="logo1" src="img/logoM.png" alt="Apple Center" />
+        <div class="menu-bar">
+          <a class="logo-links" href="">
+            <img class="logo" src="img/logoM.png" alt="Apple Center" />
             <img src="img/partLogo.png" alt="" />
           </a>
           <nav>
-            <ul class="listMenu">
-              <li>
-                <a href="">Home</a>
-                <a href="">Serviços</a>
-                <a href="">Sobre Nós</a>
-                <a href="">Contato</a>
+            <ul class="menu-list">
+              <button id="btn-mobile">
+                <span id="hamburger"></span>
+              </button>
+              <li><a href="">Home</a></li>
+              <li class="li-menu-drop">
+                <a href=""
+                  >Serviços
+                  <span class="menu-drop"
+                    ><img src="img/triangle-fill.svg" alt="" /></span
+                ></a>
+                <ul class="dropdown">
+                  <li class="li-drop">
+                    <a class="link-prin" href="">Assistência técnica iPhone</a>
+                    <ul class="link-dentro">
+                      <li><a href="">Substituição de tela</a></li>
+                      <li><a href="">Substituição de bateria</a></li>
+                      <li><a href="">Reparo de câmera traseira</a></li>
+                      <li><a href="">Troca de vidro frontal</a></li>
+                      <li><a href="">Troca de vidro traseiro</a></li>
+                      <li><a href="">Reparo de Face-id</a></li>
+                      <li><a href="">Reparo de conector de carga</a></li>
+                      <li><a href="">Reparo avançado de Placa</a></li>
+                    </ul>
+                  </li>
+                  <li class="li-drop">
+                    <a class="link-prin" href="">Assistência técnica Macbook</a>
+                    <ul class="link-dentro">
+                      <li><a href="">Substituição de tela</a></li>
+                      <li><a href="">Substituição de bateria</a></li>
+                      <li><a href="">Limpeza completa</a></li>
+                      <li><a href="">Formatação MacOSx Apple</a></li>
+                      <li><a href="">Reparo de placa avançada</a></li>
+                      <li><a href="">Troca de teclado / touchpad»</a></li>
+                      <li><a href="">Ins. de ssd / m-sata</a></li>
+                      <li><a href="">Atualização de Sistema</a></li>
+                    </ul>
+                  </li>
+                  <li class="li-drop">
+                    <a class="link-prin" href="">Assistência técnica Apple Watch</a>
+                    <ul class="link-dentro">
+                      <li><a href="">Substituição de tela</a></li>
+                      <li><a href="">Substituição de bateria</a></li>
+                      <li><a href="">Troca de vidro/touch</a></li>
+                      <li><a href="">Reparo avançado de placa</a></li>
+                    </ul>
+                  </li>
+                  <li class="li-drop">
+                    <a class="link-prin" href="">Assistência técnica iMac</a>
+                    <ul class="link-dentro">
+                      <li><a href="">Reparo de placa</a></li>
+                      <li><a href="">Limpeza completa</a></li>
+                      <li><a href="">Formatação MacOsx Apple</a></li>
+                      <li><a href="">Upgrade de SSD e M-Sata</a></li>
+                      <li><a href="">Substistuição de Tela</a></li>
+                      <li><a href="">Reparo de fonte</a></li>
+                    </ul>
+                  </li>
+                  <li class="li-drop">
+                    <a class="link-prin" href="">Assistência técnica iPad</a>
+                    <ul class="link-dentro">
+                      <li><a href="">Substituição de tela</a></li>
+                      <li><a href="">Substituição de bateria</a></li>
+                      <li><a href="">Limpeza completa</a></li>
+                      <li><a href="">Formatação MacOSx Apple</a></li>
+                      <li><a href="">Reparo de placa avançada</a></li>
+                      <li><a href="">Troca de teclado / touchpad</a></li>
+                      <li><a href="">Ins. de ssd / m-sata</a></li>
+                      <li><a href="">Atualização de Sistema</a></li>
+                    </ul>
+                  </li>
+                  <li class="li-drop">
+                    <a class="link-prin" href="">Assistência técnica Mac Mini</a>
+                    <ul class="link-dentro">
+                      <li><a href="">Reparo de Placa</a></li>
+                      <li><a href="">Upgrade do Mac Mini</a></li>
+                      <li><a href="">Ins. de SSD ou M-Sata</a></li>
+                      <li><a href="">Ins. de memória</a></li>
+                      <li><a href="">Limpeza completa</a></li>
+                      <li><a href="">Reballing de CPU</a></li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
+              <li><a href="">Sobre Nós</a></li>
+              <li><a href="">Loja Apple</a></li>
+              <li><a href="">Contato</a></li>
             </ul>
           </nav>
         </div>
@@ -45,7 +125,7 @@
           </div>
         </div>
       </div>
-      <div class="efeito-bg"></div>
+      <div class="additional-background-effect"></div>
     </header>
     <main>
       <section class="flex-quemSomos container">
@@ -221,14 +301,14 @@
                 <img src="img/watch.png" alt="" />
               </div>
               <div class="servicos-card">
-                <a class="title-card" href=""
-                  >Assistência técnica Apple Watch</a
-                >
+                <a class="title-card" href="">Assistência técnica Mac Mini</a>
                 <ul class="list-card">
-                  <li><a href="">• Substituição de tela »</a></li>
-                  <li><a href="">• Substituição de bateria »</a></li>
-                  <li><a href="">• Troca de vidro/touch »</a></li>
-                  <li><a href="">• Reparo avançado de Placa »</a></li>
+                  <li><a href="">• Reparo de Placa »</a></li>
+                  <li><a href="">• Upgrade do Mac Mini »</a></li>
+                  <li><a href="">• Ins. de SSD ou M-Sata »</a></li>
+                  <li><a href="">• Ins. de memória »</a></li>
+                  <li><a href="">• Limpeza completa »</a></li>
+                  <li><a href="">• Reballing de CPU »</a></li>
                 </ul>
                 <a class="btn-wpp" href=""
                   >Fale Conosco!
@@ -270,7 +350,7 @@
           ></path>
         </svg>
       </div>
-      <div class="efeito-footer "></div>
+      <div class="footer-background-effect"></div>
       <div class="container z-index-1000">
         <div class="flex-footer">
           <div>
@@ -286,30 +366,65 @@
           <div class="list-footer ajuste">
             <p>Links Rápidos</p>
             <ul>
-              <li><a href=""><img src="img/link.svg" alt=""> Home</a></li>
-              <li><a href=""><img src="img/link.svg" alt=""> Sobre Nós</a></li>
-              <li><a href=""><img src="img/link.svg" alt=""> Contato</a></li>
+              <li>
+                <a href=""><img src="img/link.svg" alt="" /> Home</a>
+              </li>
+              <li>
+                <a href=""><img src="img/link.svg" alt="" /> Sobre Nós</a>
+              </li>
+              <li>
+                <a href=""><img src="img/link.svg" alt="" /> Contato</a>
+              </li>
             </ul>
           </div>
           <div class="list-footer">
             <p>Serviços</p>
             <ul>
-              <li><a href=""><img src="img/checklgFooter.svg" alt=""> iPhone</a></li>
-              <li><a href=""><img src="img/checklgFooter.svg" alt=""> Macbook Pro</a></li>
-              <li><a href=""><img src="img/checklgFooter.svg" alt=""> Macbook Air</a></li>
-              <li><a href=""><img src="img/checklgFooter.svg" alt=""> Apple Watch</a></li>
-              <li><a href=""><img src="img/checklgFooter.svg" alt=""> iMac</a></li>
-              <li><a href=""><img src="img/checklgFooter.svg" alt=""> Mac Mini</a></li>
-              <li><a href=""><img src="img/checklgFooter.svg" alt=""> iPad</a></li>
-              <li><a href=""><img src="img/checklgFooter.svg" alt=""> Acessórios</a></li>
+              <li>
+                <a href=""><img src="img/checklgFooter.svg" alt="" /> iPhone</a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="img/checklgFooter.svg" alt="" /> Macbook Pro</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><img src="img/checklgFooter.svg" alt="" /> Macbook Air</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><img src="img/checklgFooter.svg" alt="" /> Apple Watch</a
+                >
+              </li>
+              <li>
+                <a href=""><img src="img/checklgFooter.svg" alt="" /> iMac</a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="img/checklgFooter.svg" alt="" /> Mac Mini</a
+                >
+              </li>
+              <li>
+                <a href=""><img src="img/checklgFooter.svg" alt="" /> iPad</a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="img/checklgFooter.svg" alt="" /> Acessórios</a
+                >
+              </li>
             </ul>
           </div>
           <div class="list-footer">
             <p>Nossas Lojas</p>
             <ul>
-              <li class="lojaInfo"><img src="img/geo.svg" alt=""> R. Alvaro Viana, 99 - Brodes, Rio Preto - SP</li>
-              <li class="lojaInfo"><img src="img/geo.svg" alt=""> 
-                Horario de atendimento: <br />
+              <li class="lojaInfo">
+                <img src="img/geo.svg" alt="" /> R. Alvaro Viana, 99 - Brodes,
+                Rio Preto - SP
+              </li>
+              <li class="lojaInfo">
+                <img src="img/geo.svg" alt="" /> Horario de atendimento: <br />
                 Seg. a Sex. das 10h as 12h / 13h as 18h
               </li>
             </ul>
