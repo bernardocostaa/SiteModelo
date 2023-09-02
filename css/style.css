@@ -608,7 +608,7 @@ footer {
   #nav.ativo {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     overflow: hidden;
     position: fixed;
     right: 0px;
@@ -623,8 +623,9 @@ footer {
     transform: translate3d(0px, 0px, 0px);
     align-items: initial;
     border: none;
-    /* justify-content: initial; */
+    justify-content: initial;
     overflow-y: auto;
+    gap: 50px;
   }
 
   .logo-links-mobile {
