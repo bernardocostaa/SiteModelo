@@ -612,6 +612,20 @@ footer {
     transition: 0.3s;
     position: relative;
   }
+  .li-menu-drop .dropdown {
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+    position: relative;
+    background: none;
+}
+.li-drop:hover ul {
+  display: block;
+  width: max-content;
+  position: relative;
+  background: none;
+  left: 0;
+}
 }
 
 @media (max-width: 769px) {
