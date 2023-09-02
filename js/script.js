@@ -19,7 +19,7 @@ btnMobile.addEventListener("touchstart", toggleMenu);
 
 
 
-window.addEventListener('scroll',(event)=>{
+window.addEventListener('scroll',()=>{
     const menuFixed = document.querySelector('.menu-bar')
     if(document.documentElement.scrollTop > 25){
         menuFixed.classList.add('fixedMenu')
@@ -30,30 +30,32 @@ window.addEventListener('scroll',(event)=>{
 
 const servicoDesktop = document.querySelector('.servi');
 const dropdown = document.querySelector('.dropdown');
+const liMenu = document.querySelectorAll('.li-drop');
 
-// Event listener para abrir e fechar o dropdown
 servicoDesktop.addEventListener('click', (event) => {
-  // Evita que o evento de clique se propague para o body
   event.stopPropagation();
 
-  // Verifique se o elemento clicado está dentro do dropdown
   if (dropdown.contains(event.target)) {
     dropdown.classList.add('ativo');
   } else {
     dropdown.classList.toggle('ativo');
   }
+
+
 });
 
-// Event listener para fechar o dropdown quando se clica fora dele
 document.addEventListener('click', (event) => {
-  // Verifique se o dropdown está aberto e se o clique não ocorreu dentro do dropdown
+
   if (dropdown.classList.contains('ativo') && !dropdown.contains(event.target)) {
     dropdown.classList.remove('ativo');
+      liMenu.forEach((item)=>{
+    item.classList.remove('ativo')
+  })
   }
 });
 
 
-const liMenu = document.querySelectorAll('.li-drop');
+
 
 liMenu.forEach((item) => {
   item.addEventListener('click', () => {
