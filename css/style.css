@@ -5,6 +5,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+.no-scroll{
+  overflow: hidden;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -78,7 +82,7 @@ a {
 }
 .fixedMenu {
   position: fixed;
-  background: #3274b6;
+  background: #4285f4;
   left: 0;
   width: 100%;
   z-index: 99999;
@@ -420,10 +424,6 @@ footer {
   margin-left: 6px;
 }
 
-.li-menu-drop:hover .dropdown {
-  visibility: visible;
-  opacity: 1;
-}
 
 .dropdown {
   background: white;
@@ -436,6 +436,11 @@ footer {
   left: 0;
   transform: translateY(20px);
   transition: 0.3s all;
+}
+
+.dropdown.ativo {
+  visibility: visible;
+  opacity: 1;
 }
 
 .dropdown li a {
@@ -463,7 +468,7 @@ footer {
   animation: animaLeft 0.5s forwards;
 }
 
-.li-drop:hover ul {
+.li-drop.ativo ul {
   display: block;
   width: max-content;
 }
@@ -542,6 +547,7 @@ footer {
 
   .menu-social{
     display: flex;
+    justify-content: center;
     gap: 18px;
     padding: 10px 20px;
   }
@@ -602,12 +608,13 @@ footer {
   #nav.ativo {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     overflow: hidden;
     position: fixed;
     right: 0px;
     top: 0px;
     height: 100vh;
-    background-color: #3274b6;
+    background-color: #4285f4;
     transition: all 200ms ease 0s;
     z-index: 2;
     padding: 32px 20px 20px;
@@ -626,7 +633,7 @@ footer {
 
   .menu-list {
     flex-direction: column;
-    flex: auto;
+    /* flex: auto; */
   }
 
   #hamburger {
@@ -645,14 +652,14 @@ footer {
     transition: 0.3s;
     position: relative;
   }
-  .li-menu-drop .dropdown {
+  .li-menu-drop .dropdown.ativo {
     visibility: visible;
     opacity: 1;
     transform: none;
     position: relative;
     background: none;
   }
-  .li-drop:hover ul {
+  .li-drop.ativo ul {
     display: block;
     width: max-content;
     position: relative;
