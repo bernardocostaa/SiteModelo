@@ -556,6 +556,16 @@ footer {
     display: flex;
     margin: 0 auto;
   }
+  .menu-list::after{
+    content: '→';
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    transform: rotate(90deg);
+    color: white;
+    animation: seta 0.5s ease-in 0s infinite alternate;
+}
+  }
 
   #btn-mobile {
     display: flex;
@@ -678,7 +688,7 @@ footer {
     transition: 0.3s all;
     color: #fff;
   }
-}
+
 
 @media (max-width: 769px) {
   .flex-footer {
@@ -744,5 +754,15 @@ footer {
   to {
     opacity: 1;
     transform: translateZ(0);
+  }
+}
+
+
+@keyframes seta {
+  from {
+   top: 0px;
+  }
+  to {
+   top: 5px;
   }
 }
