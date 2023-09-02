@@ -13,3 +13,14 @@ btnMobile.addEventListener("click", toggleMenu);
 btnMobile.addEventListener("touchstart", toggleMenu);
 
 
+
+window.addEventListener('scroll',(event)=>{
+    const menuFixed = document.querySelector('.menu-bar')
+    if(document.documentElement.scrollTop > 25){
+        menuFixed.classList.add('fixedMenu')
+    }else{
+        menuFixed.classList.remove('fixedMenu')
+    }
+   
+    
+})

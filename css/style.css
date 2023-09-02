@@ -72,9 +72,16 @@ a {
 .menu-bar {
   display: flex;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 10px;
   justify-content: space-between;
   border-bottom: 2px solid #4e4e4e;
+}
+.fixedMenu {
+  position: fixed;
+  background: #3274b6;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
 }
 
 .logo-links {
@@ -104,7 +111,7 @@ a {
   align-items: center;
   position: relative;
 }
-.servi{
+.servi {
   padding: 4px 20px;
   color: white;
   cursor: pointer;
@@ -474,12 +481,18 @@ footer {
   display: none;
 }
 
-.logo-links{
+.logo-links {
   display: flex;
 }
-.logo-links-mobile{
+.logo-links-mobile {
   display: none;
 }
+.menu-social {
+  display: none;
+}
+ .menu-wpp{
+  display: none;
+ }
 
 @media (max-width: 1025px) {
   .cont-title-head {
@@ -511,49 +524,64 @@ footer {
 }
 
 @media (max-width: 999px) {
+  .fixedMenu {
+    position: initial;
+  }
   .menu-bar {
     border: none;
   }
-  .logo-links{
+  .logo-links {
     display: none;
   }
-  .logo-links-mobile{
+  .logo-links-mobile {
     display: flex;
   }
-.servi{
-  position: relative;
-}
-
-#btn-mobile {
-  display: flex;
-  align-items: center;
-  font-size: 1rem;
-  position: relative;
-  z-index: 100;
-  width: 100%;
-  border: none;
-  background: none;
-  cursor: pointer;
-  justify-content: flex-end;
-}
-
-  #btn-mobile.ativo{
-    position: fixed;
-    left: -15px;
+  .servi {
+    position: relative;
   }
 
-   #btn-mobile.ativo #hamburger::before {
+  .menu-social{
+    display: flex;
+    gap: 18px;
+    padding: 10px 20px;
+  }
+  .menu-wpp{
+    display: flex;
+    margin: 0 auto;
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    font-size: 1rem;
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    border: none;
+    background: none;
+    cursor: pointer;
+    justify-content: flex-end;
+  }
+
+  #btn-mobile.ativo {
+    position: fixed;
+    left: -15px;
+    top: 15px;
+  }
+
+  #btn-mobile.ativo #hamburger::before {
     transform: rotate(-135deg);
   }
 
-   #btn-mobile.ativo #hamburger::after {
+  #btn-mobile.ativo #hamburger::after {
     transform: rotate(135deg);
     top: -7px;
   }
 
   #btn-mobile.ativo #hamburger {
     border-top-color: transparent;
-}
+  }
 
   #nav {
     display: flex;
@@ -589,6 +617,7 @@ footer {
     align-items: initial;
     border: none;
     justify-content: initial;
+    overflow-y: auto;
   }
 
   .logo-links-mobile {
@@ -597,6 +626,7 @@ footer {
 
   .menu-list {
     flex-direction: column;
+    flex: auto;
   }
 
   #hamburger {
@@ -621,17 +651,22 @@ footer {
     transform: none;
     position: relative;
     background: none;
-}
-.li-drop:hover ul {
-  display: block;
-  width: max-content;
-  position: relative;
-  background: none;
-  left: 0;
-}
-.li-drop,.dropdown li a{
-  color: white;
-}
+  }
+  .li-drop:hover ul {
+    display: block;
+    width: max-content;
+    position: relative;
+    background: none;
+    left: 0;
+  }
+  .li-drop,
+  .dropdown li a {
+    color: white;
+  }
+  .link-dentro li a:hover {
+    transition: 0.3s all;
+    color: #fff;
+  }
 }
 
 @media (max-width: 769px) {
@@ -682,7 +717,7 @@ footer {
 @keyframes animaLeft {
   from {
     opacity: 0;
-    transform: translate3d(-400px,0,0);
+    transform: translate3d(-400px, 0, 0);
   }
   to {
     opacity: 1;
@@ -693,7 +728,7 @@ footer {
 @keyframes animaCima {
   from {
     opacity: 0;
-    transform: translate3d(0,-200px,0);
+    transform: translate3d(0, -200px, 0);
   }
   to {
     opacity: 1;
