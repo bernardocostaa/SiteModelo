@@ -642,7 +642,7 @@ footer {
     transition: all 200ms ease 0s;
     z-index: 2;
     padding: 32px 20px 96px 20px;
-    width: 370px;
+    width: 390px;
     box-shadow: rgba(1, 7, 31, 0.41) -4px 4px 16px;
     transform: translate3d(0px, 0px, 0px);
     align-items: initial;
@@ -694,6 +694,7 @@ footer {
     position: relative;
     display: block;
     background: #65b5ee;
+    transform: translateY(10px);
   }
   .li-drop.ativo ul {
     display: block;
@@ -701,6 +702,7 @@ footer {
     position: relative;
     background:#4c94c7;
     left: 0;
+    top: 10px;
   }
   .li-drop,
   .dropdown li a {
@@ -709,6 +711,9 @@ footer {
   .link-dentro li a:hover {
     transition: 0.3s all;
     color: #fff;
+  }
+  .dropdown .li-drop:hover {
+    background:#5388ad;
   }
 }
 
