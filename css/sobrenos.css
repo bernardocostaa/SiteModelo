@@ -6,7 +6,7 @@
 }
 
 .linha{
-    width: 305px;
+    width: 50%;
     height: 3px;
     margin: 20px auto;
     display: block;
@@ -62,5 +62,8 @@
     }
     .sub-title{
         font-size: 1.2rem;
+    }
+    .quem-img{
+        min-width: initial;
     }
 }

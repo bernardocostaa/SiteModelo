@@ -434,7 +434,7 @@ footer {
 
 .menu-drop {
   position: absolute;
-  top: 12px;
+  top: 22px;
 }
 
 .menu-drop img {
@@ -567,6 +567,7 @@ footer {
   }
   .servi {
     position: relative;
+    padding: 16px 0 !important;
   }
 
   .menu-social{
@@ -715,6 +716,9 @@ footer {
   .dropdown .li-drop:hover {
     background:#5388ad;
   }
+  .menu-list li{
+    border-bottom: 2px solid white;
+  }
 }
 
 @media (max-width: 769px) {
@@ -762,6 +766,9 @@ footer {
   }
   .menu-bar {
     flex-direction: column;
+  }
+  #nav.ativo{
+    width: 100%;
   }
 }
 
