@@ -649,7 +649,7 @@ footer {
     border: none;
     justify-content: initial;
     gap: 30px;
-    overflow-y: auto;
+    /* overflow-y: auto; */
   }
 
   .menu-list li a, .menu-list li{
@@ -665,6 +665,8 @@ footer {
 
   .menu-list {
     flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
     /* height: 290px; */
     /* flex: auto; */
   }
@@ -695,7 +697,7 @@ footer {
   }
   .li-drop.ativo ul {
     display: block;
-    width: max-content;
+    width: 100%;
     position: relative;
     background:#4c94c7;
     left: 0;
