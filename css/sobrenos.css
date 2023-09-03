@@ -1,0 +1,42 @@
+.center{
+   text-align: center;
+}
+.quemSomos-bg{
+    height: 550px;
+}
+
+.linha{
+    width: 305px;
+    height: 3px;
+    margin: 20px auto;
+    display: block;
+    background: white;
+}
+.sub-title{
+    color: #4285f4;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.sub-title span{
+    font-weight: 600;
+}
+
+.flex-sobre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.info-sobre{
+    max-width: 550px;
+}
+
+.info-sobre h2{
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.info-sobre h2 span{
+    font-weight: bold;
+}

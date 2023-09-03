@@ -374,11 +374,26 @@ footer {
 
 .flex-footer {
   display: grid;
+  position: relative;
   padding-top: 60px;
   padding-bottom: 60px;
   gap: 10px;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
+}
+.footer-servicos{
+  display: grid;
+  justify-items: center;
+  position: relative;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 10px;
+}
+
+
+.h2-footer{
+  text-align: center;
+  position: relative;
+  padding: 10px 0;
 }
 
 .empresa p {
@@ -386,13 +401,13 @@ footer {
   max-width: 280px;
 }
 
-.list-footer p {
+.list-footer p, .footer-servicos p {
   padding-bottom: 12px;
   text-decoration-line: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 6px;
 }
-.list-footer li {
+.list-footer li, .footer-servicos li {
   padding: 8px 0;
 }
 
@@ -402,6 +417,9 @@ footer {
   align-items: center;
   color: white;
   position: relative;
+}
+.footer-servicos li a{
+  color: white;
 }
 
 .list-footer li a img,
@@ -441,6 +459,7 @@ footer {
 
 .dropdown.ativo {
   visibility: visible;
+  display: block;
   opacity: 1;
 }
 
@@ -527,6 +546,10 @@ footer {
   .menu-list {
     gap: 0;
   }
+  .footer-servicos{
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+  }
 }
 
 @media (max-width: 999px) {
@@ -564,7 +587,6 @@ footer {
     transform: rotate(90deg);
     color: white;
     animation: seta 0.5s ease-in 0s infinite alternate;
-}
   }
 
   #btn-mobile {
@@ -688,7 +710,7 @@ footer {
     transition: 0.3s all;
     color: #fff;
   }
-
+}
 
 @media (max-width: 769px) {
   .flex-footer {
@@ -696,6 +718,9 @@ footer {
     justify-items: center;
     text-align: center;
     gap: 20px;
+  }
+  .footer-servicos{
+    grid-template-columns: repeat(1,1fr);
   }
   .grid-cards {
     grid-template-columns: repeat(1, 1fr);
