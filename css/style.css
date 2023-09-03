@@ -579,15 +579,6 @@ footer {
     display: flex;
     margin: 0 auto;
   }
-  .menu-list::after{
-    content: '→';
-    position: absolute;
-    top: 5px;
-    right: 30px;
-    transform: rotate(90deg);
-    color: white;
-    animation: seta 0.5s ease-in 0s infinite alternate;
-  }
 
   #btn-mobile {
     display: flex;
@@ -660,6 +651,13 @@ footer {
     gap: 30px;
   }
 
+  .menu-list li a, .menu-list li{
+    letter-spacing: 1px;
+    padding: 8px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
   .logo-links-mobile {
     padding: 20px 0;
   }
@@ -667,7 +665,7 @@ footer {
   .menu-list {
     flex-direction: column;
     overflow-y: auto;
-    height: 270px;
+    /* height: 290px; */
     /* flex: auto; */
   }
 
@@ -693,13 +691,13 @@ footer {
     transform: none;
     position: relative;
     display: block;
-    background: none;
+    background: #65b5ee;
   }
   .li-drop.ativo ul {
     display: block;
     width: max-content;
     position: relative;
-    background: none;
+    background:#4c94c7;
     left: 0;
   }
   .li-drop,
