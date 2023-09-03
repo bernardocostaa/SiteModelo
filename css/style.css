@@ -641,7 +641,7 @@ footer {
     background-color: #4285f4;
     transition: all 200ms ease 0s;
     z-index: 2;
-    padding: 32px 20px 20px;
+    padding: 32px 20px 96px 20px;
     width: 370px;
     box-shadow: rgba(1, 7, 31, 0.41) -4px 4px 16px;
     transform: translate3d(0px, 0px, 0px);
@@ -665,8 +665,8 @@ footer {
 
   .menu-list {
     flex-direction: column;
-    /* overflow-y: auto;
-    overflow-x: hidden; */
+    overflow-y: auto;
+    overflow-x: hidden; 
     /* height: 290px; */
     /* flex: auto; */
   }

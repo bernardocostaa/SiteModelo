@@ -46,3 +46,12 @@
 .info-sobre h2 span{
     font-weight: bold;
 }
+
+@media (max-width: 999px){
+    .flex-sobre{
+        flex-direction: column-reverse;
+    }
+    .reverse{
+        flex-direction: column;
+    }
+}
