@@ -2,7 +2,7 @@
    text-align: center;
 }
 .quemSomos-bg{
-    height: 550px;
+    height: 500px;
 }
 
 .linha{
@@ -45,6 +45,9 @@
 }
 .info-sobre h2 span{
     font-weight: bold;
+}
+.center{
+    justify-content: center;
 }
 
 @media (max-width: 999px){

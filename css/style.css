@@ -434,7 +434,8 @@ footer {
 
 .menu-drop {
   position: absolute;
-  top: 22px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .menu-drop img {
