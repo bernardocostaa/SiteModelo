@@ -649,7 +649,7 @@ footer {
     border: none;
     justify-content: initial;
     gap: 30px;
-    /* overflow-y: auto; */
+    overflow-y: auto;
   }
 
   .menu-list li a, .menu-list li{
@@ -665,8 +665,8 @@ footer {
 
   .menu-list {
     flex-direction: column;
-    overflow-y: auto;
-    overflow-x: hidden;
+    /* overflow-y: auto;
+    overflow-x: hidden; */
     /* height: 290px; */
     /* flex: auto; */
   }
