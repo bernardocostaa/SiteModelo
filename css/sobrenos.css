@@ -26,16 +26,22 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 60px;
+    gap: 16px;
 }
 
 .info-sobre{
     max-width: 550px;
 }
 
+.quem-img{
+    min-width: 380px;
+}
+
 .info-sobre h2{
     font-size: 3rem;
     font-weight: 400;
     line-height: 1.2;
+    padding: 16px 0;
 }
 .info-sobre h2 span{
     font-weight: bold;
