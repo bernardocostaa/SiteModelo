@@ -8,9 +8,9 @@ function toggleMenu(event) {
   nav.classList.toggle("ativo");
   btnMobile.classList.toggle('ativo')
   if(nav.classList.contains('ativo')){
-    // document.body.classList.add('no-scroll')
+    document.body.classList.add('no-scroll')
   }else{
-    // document.body.classList.remove('no-scroll')
+    document.body.classList.remove('no-scroll')
   }
 }
 
