@@ -49,6 +49,56 @@
 .center{
     justify-content: center;
 }
+.info-contato{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 0;
+    align-items: center;
+}
+.logo-contato{
+    text-align: center;
+}
+.contato-link{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: black;
+    font-size: 1.125rem;
+    font-weight: bold;
+    transition: .3s all;
+}
+.contato-link:hover{
+    color: #4285f4;
+}
+.logo-contato{
+    padding-bottom: 20px;
+}
+
+.local{
+    display: flex;
+    align-items:start;
+    padding-top: 15px;
+}
+.flex-social-contato{
+    display: flex;
+    gap: 8px;
+    padding: 16px 0;
+}
+.linha-contato{
+    width: 50%;
+    display: block;
+    margin: 12px auto;
+    height: 4px;
+    background: #4285f4;
+}
+.status{
+    color: rgba(242,139,130,1.0);
+    font-weight: bold;
+}
+.status.aberto{
+    color: rgb(0, 196, 0);
+}
 
 @media (max-width: 999px){
     .flex-sobre{
@@ -68,5 +118,33 @@
     }
     .quem-img{
         min-width: initial;
+    }
+    .linha-contato{
+        width: 50%;
+    }
+    .info-contato{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contato-link{
+        justify-content: center;
+    }
+    .local{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .flex-social-contato{
+        justify-content: center;
+    }
+    .funcionamento{
+        text-align: center;
+    }
+    .mobile-map{
+        max-width: 100%;
+        height: 350px;
+    }
+    .quemSomos-bg{
+        height: 400px;
     }
 }

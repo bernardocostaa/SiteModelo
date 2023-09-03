@@ -85,6 +85,7 @@ a {
   background: #4285f4;
   left: 0;
   width: 100%;
+  padding: 0 20px;
   z-index: 99999;
 }
 
@@ -346,6 +347,9 @@ footer {
   margin-top: 140px;
   color: white;
   background: radial-gradient(at top left, #000000 0%, #444444 100%);
+}
+.mapa-footer{
+  margin-top: 15px;
 }
 
 .div-svg {
@@ -795,15 +799,5 @@ footer {
   to {
     opacity: 1;
     transform: translateZ(0);
-  }
-}
-
-
-@keyframes seta {
-  from {
-   top: 0px;
-  }
-  to {
-   top: 5px;
   }
 }
