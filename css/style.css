@@ -387,9 +387,6 @@ footer {
   color: white;
   background: radial-gradient(at top left, #000000 0%, #444444 100%);
 }
-.mapa-footer{
-  margin-top: 15px;
-}
 
 .div-svg {
   transform: rotate(180deg);
@@ -421,29 +418,31 @@ footer {
   display: grid;
   position: relative;
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 10px;
   gap: 10px;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
 }
 .footer-servicos{
   display: grid;
-  justify-items: center;
+  justify-items: start;
   position: relative;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px 10px;
+  padding-top: 20px;
 }
 
-
-.h2-footer{
-  text-align: center;
-  position: relative;
-  padding: 10px 0;
-}
 
 .empresa p {
-  padding-top: 12px;
+  padding: 12px 0;
   max-width: 280px;
+  font-size: 12px;
+}
+
+.empresa ul li, .empresa ul li a{
+  font-size: 12px;
+  padding: 4px 0;
+  color: white;
 }
 
 .list-footer p, .footer-servicos p {
@@ -453,7 +452,10 @@ footer {
   text-underline-offset: 6px;
 }
 .list-footer li, .footer-servicos li {
-  padding: 8px 0;
+  padding: 4px 0;
+}
+.flex-footer a{
+  font-size: 12px;
 }
 
 .list-footer li a,
@@ -465,6 +467,11 @@ footer {
 }
 .footer-servicos li a{
   color: white;
+  font-size: 12px;
+}
+
+.footer-servicos div{
+  width: 265px;
 }
 
 .list-footer li a img,
@@ -571,9 +578,6 @@ footer {
     gap: 25px;
     padding-top: 80px;
   }
-  .list-footer.ajuste {
-    align-self: center;
-  }
   .cont-title-head img {
     margin: 0 auto;
   }
@@ -586,15 +590,11 @@ footer {
   .grid-cards {
     grid-template-columns: repeat(2, 1fr);
   }
-  .flex-footer {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .menu-list {
     gap: 0;
   }
   .footer-servicos{
     grid-template-columns: repeat(2,1fr);
-    text-align: center;
   }
 }
 
@@ -769,9 +769,6 @@ footer {
   .menu-list li{
     border-bottom: 2px solid white;
   }
-  .empresa a img{
-    margin:  0 auto;
-  }
   .dropdown.ativo .li-drop:last-child{
     border: none;
 
@@ -782,12 +779,12 @@ footer {
 @media (max-width: 769px) {
   .flex-footer {
     grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
-    text-align: center;
     gap: 20px;
+    justify-items: start;
   }
   .footer-servicos{
     grid-template-columns: repeat(1,1fr);
+    justify-items: start;
   }
   .grid-cards {
     grid-template-columns: repeat(1, 1fr);
