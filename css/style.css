@@ -172,14 +172,14 @@ a {
   animation: animaCima 1.5s forwards;
 }
 
-.title-div h1 {
+.title-div h1,.title-div-home h1 {
   font-size: 3.5rem;
   line-height: 1.1em;
   font-weight: 600;
   margin-bottom: 30px;
 }
 
-.title-div p {
+.title-div p,.title-div-home p {
   margin-bottom: 40px;
 }
 
