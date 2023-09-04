@@ -76,10 +76,12 @@ a {
 .menu-bar {
   display: flex;
   align-items: center;
+  transition: .3s all;
   padding-top: 10px;
   justify-content: space-between;
   border-bottom: 2px solid #4e4e4e;
 }
+
 .fixedMenu {
   position: fixed;
   background: #4285f4;
@@ -87,6 +89,7 @@ a {
   width: 100%;
   padding: 0 20px;
   z-index: 99999;
+  transition: .3s all;
 }
 
 .logo-links {
@@ -149,7 +152,7 @@ a {
 
 .cont-title-head {
   display: flex;
-  padding-top: 140px;
+  padding-top: 120px;
 }
 
 .title-div {

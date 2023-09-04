@@ -99,12 +99,55 @@
 .status.aberto{
     color: rgb(0, 196, 0);
 }
+.bg-dark-servico{
+    background: linear-gradient(#000, #444);
+    margin-top: 60px;
+}
+.flex-sobre-bg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 30px 0;
+    color: white;
+}
+.flex-sobre-bg img{
+    height: 450px;
+}
+.faq{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 500;
+    padding: 20px 0;
+}
+.faq-sobre{
+   font-size: 1.875rem;
+   margin-bottom: 35px;
+}
+.faq-sobre span{
+    color: #4285f4;
+}
+.cada-fag{
+    border-bottom: 2px solid white;
+}
+.cada-fag h3{
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+.btnMeio{
+    margin: 0 auto;
+}
+
+.faq-btn{
+    padding-bottom: 30px;
+}
 
 @media (max-width: 999px){
     .flex-sobre{
         flex-direction: column-reverse;
     }
-    .reverse{
+    .reverse,.flex-sobre-bg{
         flex-direction: column;
     }
     .info-sobre{
@@ -145,6 +188,15 @@
         height: 350px;
     }
     .quemSomos-bg{
-        height: 400px;
+        height: auto;
+    }
+    .center{
+        padding-bottom: 30px;
+    }
+    .faq{
+        font-size: 2rem;
+    }
+    .faq-sobre{
+        font-size: 1.5rem;
     }
 }
