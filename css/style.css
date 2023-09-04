@@ -429,7 +429,7 @@ footer {
   position: relative;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px 10px;
-  padding-top: 20px;
+  padding: 20px 0;
 }
 
 
@@ -468,6 +468,16 @@ footer {
 .footer-servicos li a{
   color: white;
   font-size: 12px;
+}
+.footer-final{
+  background: #000;
+  color: white;
+  padding: 25px 0;
+  position: relative;
+}
+.info-footer-p p{
+  font-size: 10px;
+  margin-bottom: 8px;
 }
 
 .footer-servicos div{
