@@ -153,10 +153,13 @@ a {
 
 .cont-title-head {
   display: flex;
+  gap: 30px;
   padding-top: 120px;
+  align-items: center;
 }
 
 .title-div {
+  max-width: 650px;
   color: white;
   animation: animaLeft 1.5s forwards;
 }
@@ -165,14 +168,14 @@ a {
 }
 
 .title-div h1 {
-  font-size: 3.75rem;
+  font-size: 3.5rem;
   line-height: 1.1em;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .title-div p {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .btn-wpp {
@@ -738,16 +741,19 @@ footer {
     transform: none;
     position: relative;
     display: block;
-    background: #65b5ee;
+    background: #000;
     transform: translateY(10px);
   }
   .li-drop.ativo ul {
     display: block;
     width: 100%;
     position: relative;
-    background:#4c94c7;
+    background:#4285f4;
     left: 0;
     top: 10px;
+  }
+  .dropdown{
+    padding:0;
   }
   .li-drop,
   .dropdown li a {
@@ -758,7 +764,7 @@ footer {
     color: #fff;
   }
   .dropdown .li-drop:hover {
-    background:#5388ad;
+    background:#333;
   }
   .menu-list li{
     border-bottom: 2px solid white;
@@ -766,6 +772,11 @@ footer {
   .empresa a img{
     margin:  0 auto;
   }
+  .dropdown.ativo .li-drop:last-child{
+    border: none;
+
+  }
+
 }
 
 @media (max-width: 769px) {
