@@ -158,8 +158,13 @@ a {
   align-items: center;
 }
 
-.title-div {
+.title-div-home {
   max-width: 650px;
+  color: white;
+  animation: animaLeft 1.5s forwards;
+}
+.title-div {
+  width: 100%;
   color: white;
   animation: animaLeft 1.5s forwards;
 }

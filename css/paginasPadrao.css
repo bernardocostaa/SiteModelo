@@ -1,6 +1,3 @@
-.center{
-   text-align: center;
-}
 .quemSomos-bg{
     height: 500px;
 }
@@ -48,6 +45,7 @@
 }
 .center{
     justify-content: center;
+    text-align: center;
 }
 .info-contato{
     display: flex;
