@@ -150,9 +150,6 @@
     .reverse,.flex-sobre-bg{
         flex-direction: column;
     }
-    .info-sobre{
-        text-align: center;
-    }
     .info-sobre h2{
         font-size: 2.5rem;
     }
@@ -198,5 +195,8 @@
     }
     .faq-sobre{
         font-size: 1.5rem;
+    }
+    .cada-fag h3{
+        font-size: 1.2rem;
     }
 }

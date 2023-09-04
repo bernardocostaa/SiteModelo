@@ -730,6 +730,9 @@ footer {
   .menu-list li{
     border-bottom: 2px solid white;
   }
+  .empresa a img{
+    margin:  0 auto;
+  }
 }
 
 @media (max-width: 769px) {
