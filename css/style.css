@@ -84,7 +84,7 @@ a {
 
 .fixedMenu {
   position: fixed;
-  background: #4285f4;
+  background: #000033;
   left: 0;
   width: 100%;
   padding: 0 20px;
@@ -650,7 +650,7 @@ footer {
     right: 0px;
     top: 0px;
     height: 100vh;
-    background-color: #4285f4;
+    background-color: #000033;
     transition: all 200ms ease 0s;
     z-index: 2;
     padding: 32px 20px 96px 20px;
