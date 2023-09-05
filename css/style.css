@@ -928,6 +928,7 @@ footer {
   .btn-google{
     margin: 16px auto;
     font-size: 14px;
+    padding: 12px 20px;
   }
   .title-servico,.textServ h2{
     font-size: 2rem;
