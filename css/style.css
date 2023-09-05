@@ -130,7 +130,7 @@ a {
 .menu-list li a::after {
   content: "";
   position: absolute;
-  bottom: -5px;
+  bottom: 0px;
   width: 100%;
   height: 2px;
   background-size: 0px 2px;
@@ -544,7 +544,10 @@ footer {
 .li-drop {
   padding: 4px 0;
   color: #000;
-  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+.li-drop:last-child{
+  border-bottom: none;
 }
 
 .li-drop ul {
@@ -563,9 +566,10 @@ footer {
 
 .link-dentro li {
   padding: 3px 0;
+  border-bottom: 2px solid black;
 }
 
-.link-dentro li a:hover {
+.link-dentro li a:hover, .li-drop:hover {
   transition: 0.3s all;
   color: #0000ff;
 }
@@ -628,9 +632,27 @@ footer {
   gap: 15px 10px ;
  }
  .title-servico{
-  font-size: 2.625rem;
-  font-weight: 600;
-  text-align: center;
+  background-color: #ffba2c;
+    color: #000;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,.16);
+ }
+ .logos-servicos{
+  display: flex;
+  padding-top: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+ }
+ .logos-servicos img{
+  width: 200px;
  }
  .btn-google{
   background: #0033FF;
@@ -932,8 +954,15 @@ footer {
     white-space: nowrap;
   }
   .title-servico,.textServ h2{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
+  .logos-servicos img{
+    width: 140px;
+   }
+   .textServ p{
+    font-size: 14px;
+   }
+
 }
 
 @keyframes animaLeft {
