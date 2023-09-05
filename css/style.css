@@ -855,6 +855,10 @@ footer {
 }
 
 @media (max-width: 769px) {
+
+  .atendimento .btn-wpp{
+    margin: 10px auto;
+  }
   .flex-footer {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
@@ -923,6 +927,10 @@ footer {
   }
   .btn-google{
     margin: 16px auto;
+    font-size: 14px;
+  }
+  .title-servico,.textServ h2{
+    font-size: 2rem;
   }
 }
 
