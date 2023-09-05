@@ -865,6 +865,7 @@ footer {
   }
   .dropdown .li-drop:hover {
     background:#333;
+    color: white;
   }
   .menu-list li{
     border-bottom: 2px solid white;
@@ -962,7 +963,9 @@ footer {
    .textServ p{
     font-size: 14px;
    }
-
+   .menu-list li{
+    padding: 6px 0;
+   }
 }
 
 @keyframes animaLeft {
