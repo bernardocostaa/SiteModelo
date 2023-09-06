@@ -123,6 +123,7 @@ a {
 }
 .servi {
   padding: 4px 20px;
+  caret-color: transparent;
   color: white;
   cursor: pointer;
   transition: 0.3s all;
