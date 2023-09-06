@@ -66,28 +66,41 @@ liMenu.forEach((item) => {
   });
 });
 
-function funcionamento(){
-  const funcionamento = document.querySelector('.horario')
-  const status = funcionamento.querySelector('span')
-  let semana = funcionamento.dataset.semana.split(',').map(Number)
-  let horario = funcionamento.dataset.horario.split(',').map(Number)
-  console.log(semana);
-
-  let dataAgora = new Date()
-  let diaAgora = dataAgora.getDay()
-  console.log(diaAgora);
-  let horarioAgora = dataAgora.getUTCHours() - 3
-
-  let semanaAberto = semana.indexOf(diaAgora) !== -1
-  let horarioAberto = (horarioAgora >= horario[0] && horarioAgora < horario[1])
-
-  console.log(semanaAberto,horarioAberto);
-  if(semanaAberto && horarioAberto){
-    status.innerText = 'Aberto'
-    status.classList.add('aberto')
-    console.log('ssss');
+const funcionamentoHTML = document.querySelector('.horario')
+if(funcionamentoHTML){
+  function funcionamento(){
+    const status = funcionamentoHTML.querySelector('span')
+    let semana = funcionamentoHTML.dataset.semana.split(',').map(Number)
+    let horario = funcionamentoHTML.dataset.horario.split(',').map(Number)
+    console.log(semana);
+  
+    let dataAgora = new Date()
+    let diaAgora = dataAgora.getDay()
+    let horarioAgora = dataAgora.getUTCHours() - 3
+  
+    let semanaAberto = semana.indexOf(diaAgora) !== -1
+    let horarioAberto = (horarioAgora >= horario[0] && horarioAgora < horario[1])
+  
+    console.log(semanaAberto,horarioAberto);
+    if(semanaAberto && horarioAberto){
+      status.innerText = 'Aberto'
+      status.classList.add('aberto')
+    }
   }
+  
+  funcionamento()
 }
 
-funcionamento()
 
+const faqList = document.querySelectorAll('.cada-faq')
+if(faqList.length){
+  faqList.forEach((item)=>{
+    item.addEventListener('click',() =>{
+      const faq = item.querySelector('.cada-faq h3')
+      const faqp = item.querySelector('.cada-faq p')
+      const btnFaq = faq.querySelector('img')
+      btnFaq.classList.toggle('ativo')
+      faqp.classList.toggle('ativo')
+    })
+  })
+}
