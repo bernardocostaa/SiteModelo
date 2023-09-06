@@ -118,8 +118,8 @@
     padding: 20px 0;
 }
 .faq-sobre{
-   font-size: 1.875rem;
-   margin-bottom: 35px;
+   font-size: 1.5rem;
+   margin-bottom: 20px;
 }
 .faq-sobre span{
     color: #4285f4;
@@ -212,7 +212,7 @@
         font-size: 2rem;
     }
     .faq-sobre{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .cada-faq h3{
         font-size: 1rem;
@@ -220,6 +220,9 @@
     .logo-contato img{
         width: 200px;
         margin: 0 auto;
+    }
+    .info-sobre{
+        width: 100%;
     }
 }
 
