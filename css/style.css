@@ -182,6 +182,9 @@ a {
 .title-div p,.title-div-home p {
   margin-bottom: 40px;
 }
+.cor-google{
+  color: #4285f4;
+}
 
 .btn-wpp {
   display: flex;
