@@ -761,6 +761,9 @@ footer {
   #btn-mobile.ativo #hamburger::before {
     transform: rotate(-135deg);
   }
+  .dropdown .ativo .li-drop{
+    padding-left: 4px;
+  }
 
   #btn-mobile.ativo #hamburger::after {
     transform: rotate(135deg);
@@ -869,6 +872,8 @@ footer {
   .li-drop,
   .dropdown li a {
     color: white;
+    padding: 4px 0;
+    padding-left: 6px;
   }
   .link-dentro li a:hover {
     transition: 0.3s all;
@@ -880,6 +885,10 @@ footer {
   }
   .menu-list li{
     border-bottom: 2px solid white;
+    padding-left: 4px;
+  }
+  .servi p{
+    padding-left: 4px;
   }
   .dropdown.ativo .li-drop:last-child{
     border: none;
