@@ -54,9 +54,6 @@
     padding: 60px 0;
     align-items: center;
 }
-.logo-contato{
-    text-align: center;
-}
 .contato-link{
     display: flex;
     gap: 8px;
@@ -196,5 +193,9 @@
     }
     .cada-fag h3{
         font-size: 1.2rem;
+    }
+    .logo-contato img{
+        width: 200px;
+        margin: 0 auto;
     }
 }
