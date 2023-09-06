@@ -270,7 +270,7 @@ a {
 }
 
 .telefone img {
-  max-width: 300px;
+  max-width: 550px;
 }
 
 .bg-dark {
@@ -704,6 +704,9 @@ footer {
   .footer-servicos{
     grid-template-columns: repeat(2,1fr);
   }
+  .telefone img{
+    max-width: 450px;
+  }
 }
 
 @media (max-width: 999px) {
@@ -893,9 +896,17 @@ footer {
   }
   .dropdown.ativo .li-drop:last-child{
     border: none;
-
   }
-
+  .flex-quemSomos {
+    flex-direction: column;
+  }
+  .telefone img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .quemSomos{
+    max-width: initial;
+  }
 }
 
 @media (max-width: 769px) {
@@ -917,13 +928,8 @@ footer {
     justify-items: center;
   }
  
-  .flex-quemSomos {
-    flex-direction: column;
-  }
-  .telefone img {
-    max-width: 180px;
-    margin: 0 auto;
-  }
+
+
   .btn-wpp {
     padding: 10px 30px;
   }
