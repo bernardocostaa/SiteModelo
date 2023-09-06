@@ -838,6 +838,7 @@ footer {
   .li-menu-drop .dropdown.ativo {
     visibility: visible;
     opacity: 1;
+    width: 100%;
     transform: none;
     position: relative;
     display: block;
