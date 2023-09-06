@@ -652,7 +652,14 @@ footer {
   gap: 16px;
  }
  .logos-servicos img{
-  width: 200px;
+  width: 180px;
+ }
+ .logos-servicos ul {
+  display: flex;
+  gap: 8px;
+ }
+ .logos-servicos ul li img{
+    width: 30px;
  }
  .btn-google{
   background: #0033FF;
