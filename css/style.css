@@ -600,8 +600,14 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    color: black;
     padding: 20px;
     border: 1px solid #d6dae4;
+    transition: .3s all;
+ }
+
+ .card-avaliacao:hover{
+  box-shadow: 0px 3px 6px rgba(0,0,0,.16);
  }
 
  .avaliacao-header{
