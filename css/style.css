@@ -738,6 +738,10 @@ footer {
   .flex-servico {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+.footer-servicos div {
+  width: 100%;
+}
   .menu-bar {
     border: none;
   }
@@ -939,7 +943,6 @@ footer {
   .flex-footer {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
-    width: 100%;
     justify-items: start;
   }
   .footer-servicos {
