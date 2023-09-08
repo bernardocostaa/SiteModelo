@@ -506,7 +506,7 @@ footer {
 }
 
 .footer-servicos div {
-  width: 265px;
+  max-width: 350px;
 }
 
 .list-footer li a img,
