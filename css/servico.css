@@ -23,6 +23,7 @@
 .btn-ver-mais{
     background: #0033FF;
     color: white;
+    white-space: nowrap;
     padding: 10px 14px;
     display: block;
     transition: .3s all;

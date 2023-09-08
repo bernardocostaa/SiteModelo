@@ -469,8 +469,10 @@ footer {
 }
 
 .list-footer p,
-.footer-servicos p {
+.footer-servicos p,
+.link-footer {
   padding-bottom: 12px;
+  color: white;
   text-decoration-line: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 6px;
